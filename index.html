@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="ru"><head><meta charset="utf-8"><title>GameHub</title><link rel="stylesheet" href="style.css"></head>
+<body>
+<aside class="side">
+  <h1>GameHub</h1>
+  <nav id="nav"></nav>
+  <div class="tools">
+    <button id="rescan">Обновить список</button>
+    <button id="add">Добавить игру</button>
+    <button id="theme">Оформление</button>
+  </div>
+</aside>
+<main>
+  <header><h2 id="title"></h2><input id="q" placeholder="Поиск по играм" autocomplete="off"></header>
+  <div id="scroll"><div id="hero"></div><div id="grid"></div></div>
+</main>
+<section class="detail" id="detail"></section>
+<aside class="drawer" id="drawer">
+  <h3>Оформление</h3>
+  <div id="presets"></div>
+  <label>Акцент<input type="color" id="c-accent"></label>
+  <label>Фон<input type="color" id="c-bg"></label>
+  <label>Скругление<input type="range" id="r-radius" min="0" max="32"></label>
+  <label>Размер карточек<input type="range" id="r-size" min="130" max="260"></label>
+  <button id="unhide">Показать скрытые игры</button>
+  <button id="reset">Сбросить оформление</button>
+  <button id="close" class="main">Готово</button>
+</aside>
+<div id="menu" class="menu"></div><div id="toast"></div>
+<script src="app.js"></script>
+</body></html>
